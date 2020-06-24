@@ -136,23 +136,27 @@
         -webkit-box-orient: vertical
 
 // tags page
-.tag-cloud
-  a
-    display: inline-block
-    padding: 0 .4rem
-    cursor: pointer
-    transition: all .3s
+.tag-lists
+  padding: 1rem 0 1.5rem
 
-    &:hover
-      color: $theme-button-hover-color !important
-      transform: scale(1.1)
-
-  &__title
+  .tag__title
     text-align: center
     font-size: 1.8rem
 
-  &-tags
-    text-align: center
+.tag-list
+  a
+    color: $font-black
+    cursor: pointer
+
+  .tag-list-count
+    margin-left: .4rem
+    color: $theme-meta-color
+
+    &:before
+      content: '('
+
+    &:after
+      content: ')'
 
 .layout_post > #post,
 .layout_page > div:first-child:not(.recent-posts)
@@ -340,6 +344,9 @@
   .category-lists
     padding: 0
 
+  .tag-lists
+    padding: 0
+
   #recent-posts
     .recent-post-item
       flex-direction: column
@@ -371,7 +378,7 @@
     #page,
     .category-content,
     #archive,
-    .tag-cloud,
+    .tag-content,
     #tag,
     #category
       order: 2
