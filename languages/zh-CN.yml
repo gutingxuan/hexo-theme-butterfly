@@ -3,8 +3,8 @@ sidebar:
   have_read: 你已经读了
 
 footer:
-  driven: 驱动
-  theme: 主题
+  driven: Driven
+  theme: Theme
 
 copy:
   success: 复制成功
@@ -24,7 +24,7 @@ post:
   created: 发表于
   updated: 更新于
   wordcount: 字数总计
-  min2read: "阅读时长: %s 分钟"
+  min2read: "大概要: %s 分钟才能读完哦"
   page_pv: 阅读量
   comments: 评论数
   copyright:
