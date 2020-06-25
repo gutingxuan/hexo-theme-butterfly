@@ -92,15 +92,14 @@ img {
 	background-color: rgba(0, 0, 0, 0);
 }		
 		
-.aplayer.aplayer-fixed .aplayer-body {
+.aplayer.aplayer-fixed {
 	position: fixed;
 	bottom: 0;
 	left: -66px;
 	right: 0;
 	margin: 0;
 	z-index: 99;
-	background: #fff;
-	padding-right: 18px;
-	transition: all .3s ease;
-	max-width: 400px
+	overflow: visible;
+	max-width: 400px;
+	box-shadow: none
 }

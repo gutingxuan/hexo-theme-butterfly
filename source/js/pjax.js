@@ -35,3 +35,8 @@
 $(document).ready(function() {
   MyApp.initPjax();
 });
+
+$(document).on('pjax:complete', function () {
+  $.getScript('/js/utils.js');
+  $.getScript('/js/main.js');
+});
