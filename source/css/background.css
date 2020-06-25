@@ -91,3 +91,9 @@ img {
 #footer:before {
 	background-color: rgba(0, 0, 0, 0);
 }
+
+.aplayer.aplayer-fixed.aplayer-narrow 
+	.aplayer-body
+		left: -66px !important
+	.aplayer-body:hover
+		left: 0px !important
