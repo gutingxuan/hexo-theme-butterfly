@@ -25,6 +25,12 @@
     */
     siteBootUp: function(){
       //「局部刷新」和「页面刷新」都需要运行的代码
+      $.getScript('/js/utils.js');
+      $.getScript('/js/main.js');
+      $.getScript('/js/page.js');
+      $.getScript('/js/post_lazyload.js');
+      $.getScript('/js/search/local-search.js');
+      $.getScript('//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js')
       console.log("全局执行");
     }
   };
@@ -37,6 +43,4 @@ $(document).ready(function() {
 });
 
 $(document).on('pjax:complete', function () {
-  $.getScript('/js/utils.js');
-  $.getScript('/js/main.js');
 });
