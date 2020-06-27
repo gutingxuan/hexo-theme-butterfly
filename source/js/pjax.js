@@ -17,7 +17,7 @@
         //在「局部刷新」时才会运行
         console.log("局部执行");
       });
-//      self.siteBootUp();
+      self.siteBootUp();
     },
     /*
     * Things to be execute when normal page load
