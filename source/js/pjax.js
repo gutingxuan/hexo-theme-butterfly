@@ -12,12 +12,12 @@
 
       });
       // PJAX 渲染结束时
-      $(document).on('pjax:end', function() {
+      $(document).on('pjax:complete', function() {
         self.siteBootUp();
         //在「局部刷新」时才会运行
         console.log("局部执行");
       });
-      self.siteBootUp();
+//      self.siteBootUp();
     },
     /*
     * Things to be execute when normal page load
@@ -26,9 +26,7 @@
     siteBootUp: function(){
       //「局部刷新」和「页面刷新」都需要运行的代码
       $.getScript('/js/utils.js');
-      $.getScript('/js/main.js');
-      $.getScript('/js/page.js');
-      $.getScript('/js/post_lazyload.js');
+      $.getScript('/js/main.js'); 
       $.getScript('/js/search/local-search.js');
       $.getScript('//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js')
       console.log("全局执行");
@@ -42,5 +40,3 @@ $(document).ready(function() {
   MyApp.initPjax();
 });
 
-$(document).on('pjax:complete', function () {
-});

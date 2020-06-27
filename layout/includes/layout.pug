@@ -47,3 +47,8 @@ html(lang=config.language data-theme=theme.display_mode)
       include ./rightside.pug
       !=partial('includes/search/index', {}, {cache:theme.fragment_cache})
       include ./additional-js.pug
+      
+
+    if theme.click_heart
+        script(src=url_for(theme.CDN.click_heart))
+    
