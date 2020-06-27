@@ -1,6 +1,7 @@
 (function($){
   var MyApp = {
     initPjax: function(){
+      self.siteBootUp();
       var self = this;
       // 初始化
       $(document).pjax('a[target!="_blank"]', '#pjax-container', {
