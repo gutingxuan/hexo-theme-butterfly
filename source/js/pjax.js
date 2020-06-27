@@ -12,7 +12,7 @@
 
       });
       // PJAX 渲染结束时
-      $(document).on('pjax:complete', function() {
+      $(document).on('pjax:end', function() {
         self.siteBootUp();
         //在「局部刷新」时才会运行
         console.log("局部执行");
