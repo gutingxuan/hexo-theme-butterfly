@@ -12,20 +12,17 @@ if hexo-config('readmode')
 
   [data-theme='dark']
     .read-mode
-      --font-color: rgba(255, 255, 255, .7)
+      --font-color: rgba(255, 255, 255, .6)
       --readmode-light-color: #0d0d0d
-      --white: rgba(255, 255, 255, .9)
-      --light-grey: rgba(255, 255, 255, .7)
-      --gray: rgba(255, 255, 255, .7)
-      --hr-border: rgba(255, 255, 255, .5)
-      --hr-before-color: rgba(255, 255, 255, .7)
+      --white: rgba(255, 255, 255, .8)
+      --light-grey: rgba(255, 255, 255, .6)
+      --gray: rgba(255, 255, 255, .6)
+      --hr-border: rgba(255, 255, 255, .3)
+      --hr-before-color: rgba(255, 255, 255, .6)
       -highlight-bg: #171717
 
   .read-mode
     background: var(--readmode-light-color)
-
-    #aside_content
-      display: none
 
     #body-wrap
       padding-left: 0 !important
@@ -41,21 +38,23 @@ if hexo-config('readmode')
         padding: 0
         text-align: center
 
-    #post
-      margin: 0 auto
-      background: transparent
-      box-shadow: none
-
-      &:hover
+    .layout_post
+      > #post
+        background: transparent
         box-shadow: none
+
+        &:hover
+          box-shadow: none
 
     & > canvas
       display: none !important
 
     .highlight-tools,
     #footer,
-    #post > *:not(#post-info):not(.post-content),
+    #post > *:not(:first-child),
     #to_comment,
+    #sidebar,
+    #toggle-sidebar,
     #mobile-toc-button,
     #nav,
     .post-outdate-notice,
@@ -180,7 +179,6 @@ if hexo-config('readmode')
 
       .note
         border: 2px solid var(--gray)
-        border-left-color: var(--gray) !important
         filter: none
-        background-color: var(--readmode-light-color) !important
+        background-color: var(--readmode-light-color)
         color: var(--font-color)
