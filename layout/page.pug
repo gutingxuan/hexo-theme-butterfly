@@ -4,12 +4,7 @@ block content
   #page
     case page.type
       when 'tags'
-        .tag-content
-          .tag-lists
-            .tag__title= _p('page.tag')
-              |  - 
-              span.tag__amount= site.tags.length
-            div!= list_tags()
+        include includes/page/tags.pug
       when 'link'
         include includes/page/flink.pug
       when 'categories'
