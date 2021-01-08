@@ -121,23 +121,26 @@
     width: 100%
     text-align: left
 
+    +maxWidth900()
+      bottom: 1.5rem
+      text-align: left
+
     +maxWidth768()
       bottom: 1.1rem
       padding: 0 1.1rem
 
 #post-info
-  #post-title
+  .post-title
+    @extend .limit-more-line
     margin-bottom: .4rem
-    font-size: 2.15em
+    color: var(--white)
+    font-weight: normal
+    font-size: 2.5em
+    line-height: 1.5
+    -webkit-line-clamp: 3
 
     +maxWidth768()
       font-size: 1.72em
-
-    .posttitle
-      @extend .limit-more-line
-      color: var(--white)
-      line-height: 1.5
-      -webkit-line-clamp: 3
 
   #post-meta
     color: var(--light-grey)
@@ -185,17 +188,14 @@
   & > #post-info
     margin-bottom: 1.5rem
 
-    .posttitle
+    .post-title
       padding-bottom: .2rem
       border-bottom: 1px solid var(--light-grey)
       color: var(--text-highlight-color)
 
-[data-theme='light']
-  #post
-    #post-info
-      #post-meta,
-      #post-meta a
-        color: #78818a
+    #post-meta,
+    #post-meta a
+      color: #78818a
 
 // css hack
 // all browser in ios and safari in all apple device
@@ -346,12 +346,15 @@ _:future,
         font-size: inherit
 
     .menus_items
+      position: absolute
+      left: 0
+      visibility: hidden
+      opacity: 0
+
+    #search-button span
       display: none !important
 
-    #search_button span
-      display: none !important
-
-  #search_button
+  #search-button
     display: inline
     padding: 0 0 0 .7rem
 
