@@ -1,12 +1,8 @@
 #web_bg {
-	background: linear-gradient(
-	  102.7deg,
-	  #fddaff 8.2%,
-	  #dfadfc 19.6%,
-	  #adcdfc 36.8%,
-	  #adfcf4 73.2%,
-	  #caf8d0 90.9%
-	);
+	background: -moz-linear-gradient(45deg, #6dd0f2 15%, #f59abe 85%);
+	background: -webkit-linear-gradient(45deg, #6dd0f2 15%, #f59abe 85%);
+	background: -ms-linear-gradient(45deg, #6dd0f2 15%, #f59abe 85%);
+	background: linear-gradient(45deg, #6dd0f2 15%, #f59abe 85%);  
   }
 
 /* 文章页背景 */
