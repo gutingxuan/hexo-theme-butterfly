@@ -131,12 +131,13 @@ cover:
   # display the cover or not (是否顯示文章封面)
   index_enable: true
   aside_enable: true
-  archives_enable: true
+  archives_enable: false
   # the position of cover in home page (封面顯示的位置)
   # left/right/both
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
+    - https://s1.ax1x.com/2020/05/27/tFxGPe.png
     # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
 
 # Replace Broken Images (替換無法顯示的圖片)
@@ -167,7 +168,7 @@ post_meta:
 # wordcount (字數統計)
 # see https://butterfly.js.org/posts/ceeb73f/#字數統計
 wordcount:
-  enable: false
+  enable: true
   post_wordcount: true
   min2read: true
   total_wordcount: true
@@ -955,7 +956,7 @@ CDN:
     # flickr_justified_gallery_js:
     # flickr_justified_gallery_css:
     # aplayer_css:
-    # aplayer_js:
+    # aplayer_js: 
     # meting_js:
     # prismjs_js:
     # prismjs_lineNumber_js:

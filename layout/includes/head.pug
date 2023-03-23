@@ -66,8 +66,8 @@ include ./head/noscript.pug
 
 !=fragment_cache('injectHeadJs', function(){return inject_head_js()})
 
-if page.aplayer
-  include ./head/aplayer.pug
+//- if page.aplayer
+//-   include ./head/aplayer.pug
 
 include ./third-party/aplayer.pug
 !=fragment_cache('injectHead', function(){return injectHtml(theme.inject.head)})
