@@ -4,3 +4,6 @@ if theme.aplayer && theme.aplayer.enable
         link(rel='stylesheet', href=item)
     each item in theme.aplayer.js
         script(src=item)
+link(rel='stylesheet' href=url_for(theme.asset.aplayer_css) media="print" onload="this.media='all'")
+script(src=url_for(theme.asset.aplayer_js))
+script(src=url_for(theme.asset.meting_js))
