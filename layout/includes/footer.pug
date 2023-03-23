@@ -2,9 +2,9 @@
   - var now = new Date()
   - var nowYear = now.getFullYear()
   if theme.since && theme.since != nowYear
-    .copyright!= `&copy;${theme.since} - ${nowYear + ' '} <i id="heart" class="fa fas fa-heart"></i> ${config.author}`
+    .copyright!= `&copy;${theme.since} - ${nowYear + ' '} <i id="heartbeat" class="fa fas fa-heart"></i> ${config.author}`
   else
-    .copyright!= `&copy;${nowYear + ' '} <i id="heart" class="fa fas fa-heart"></i> ${config.author}`
+    .copyright!= `&copy;${nowYear + ' '} <i id="heartbeat" class="fa fas fa-heart"></i> ${config.author}`
   if theme.footer_copyright.enable
     .framework-info
       span= _p('footer.driven') + ' '
